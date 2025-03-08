@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-08T18:42:38.310234" rpa="false" schemaversion="5">
+<suite id="s1" name="Update Staff Group" source="C:\Users\KASIDIT\Documents\GitHub\auto_edit_staff_catty\update_staff_group.robot">
+<test id="s1-t1" name="Edit Record Test" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-08T18:42:38.500366" level="INFO">Opening browser 'chrome' to base url 'https://sellout-oppomex-training.possefy.co.th/staff/lists-v2?keyword=R118099&amp;status=1&amp;group_catty=&amp;department_id='.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-08T18:42:38.500178" elapsed="1.959890"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-08T18:42:40.460389" elapsed="0.024130"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.login.username-field</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-08T18:42:40.485008" elapsed="0.012038"/>
+</kw>
+<msg time="2025-03-08T18:42:40.497183" level="INFO">${is_login} = True</msg>
+<var>${is_login}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>css:.login.username-field</arg>
+<arg>5s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-03-08T18:42:40.484802" elapsed="0.012416"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Login To Application">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-08T18:42:41.498205" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-08T18:42:40.498017" elapsed="1.000308"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-08T18:42:41.498719" level="INFO">Typing text 'admin' into text field 'css:input.login.username-field'.</msg>
+<arg>css:input.login.username-field</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-08T18:42:41.498487" elapsed="0.038460"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-08T18:42:41.537352" level="INFO">Typing text 'AdminMXITTraining@!@2025' into text field 'css:input.login.password-field'.</msg>
+<arg>css:input.login.password-field</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-08T18:42:41.537108" elapsed="0.051497"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-03-08T18:42:41.589025" level="INFO">Sending key(s) ('ENTER',) to css:input.login.password-field element.</msg>
+<msg time="2025-03-08T18:42:41.861763" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-03-08T18:42:41.861833" level="INFO">Releasing special key ENTER.</msg>
+<arg>css:input.login.password-field</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-03-08T18:42:41.588753" elapsed="0.845182"/>
+</kw>
+<status status="PASS" start="2025-03-08T18:42:40.497755" elapsed="1.936309"/>
+</kw>
+<arg>${is_login}</arg>
+<arg>Login To Application</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-08T18:42:40.497469" elapsed="1.936646"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-08T18:42:42.434530" level="INFO">Opening url 'https://sellout-oppomex-training.possefy.co.th/staff/lists-v2?keyword=R118099&amp;status=1&amp;group_catty=&amp;department_id='</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-08T18:42:42.434369" elapsed="0.362009"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-08T18:42:42.796635" elapsed="0.013381"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-03-08T18:42:42.810375" elapsed="0.273949"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-08T18:42:44.084849" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-08T18:42:43.084634" elapsed="1.000324"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-08T18:42:44.085609" level="INFO">Clicking element 'xpath=//tr[td[contains(text(),"R118099")]]//a[@title="Edit"]'.</msg>
+<arg>xpath=//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-08T18:42:44.085407" elapsed="0.082998"/>
+</kw>
+<arg>Click Element</arg>
+<arg>xpath=//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-03-08T18:42:44.085242" elapsed="0.083241"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-08T18:42:45.169541" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-08T18:42:44.168849" elapsed="1.000807"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-03-08T18:42:45.170445" level="INFO">Executing JavaScript:
+document.evaluate('//tr[td[contains(text(),"R118099")]]//a[@title="Edit"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();
+Without any arguments.</msg>
+<msg time="2025-03-08T18:42:45.285436" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-08T18:42:45.285605" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x00007FF701EDDF85+26693]
+	(No symbol) [0x00007FF701E3EAD0]
+	(No symbol) [0x00007FF701CC91CA]
+	(No symbol) [0x00007FF701CD0B2C]
+	(No symbol) [0x00007FF701CD3C8C]
+	(No symbol) [0x00007FF701D713F2]
+	(No symbol) [0x00007FF701D478EA]
+	(No symbol) [0x00007FF701D700B8]
+	(No symbol) [0x00007FF701D476C3]
+	(No symbol) [0x00007FF701D10490]
+	(No symbol) [0x00007FF701D11743]
+	GetHandleVerifier [0x00007FF70223436D+3525677]
+	GetHandleVerifier [0x00007FF702247F3B+3606523]
+	GetHandleVerifier [0x00007FF70223CEE3+3561379]
+	GetHandleVerifier [0x00007FF701FA7C0A+853194]
+	(No symbol) [0x00007FF701E4990F]
+	(No symbol) [0x00007FF701E45674]
+	(No symbol) [0x00007FF701E45816]
+	(No symbol) [0x00007FF701E34D89]
+	BaseThreadInitThunk [0x00007FFD14677374+20]
+	RtlUserThreadStart [0x00007FFD15D1CC91+33]
+</msg>
+<arg>document.evaluate('//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="FAIL" start="2025-03-08T18:42:45.169990" elapsed="0.117478">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x00007FF701EDDF85+26693]
+	(No symbol) [0x00007FF701E3EAD0]
+	(No symbol) [0x00007FF701CC91CA]
+	(No symbol) [0x00007FF701CD0B2C]
+	(No symbol) [0x00007FF701CD3C8C]
+	(No symbol) [0x00007FF701D713F2]
+	(No symbol) [0x00007FF701D478EA]
+	(No symbol) [0x00007FF701D700B8]
+	(No symbol) [0x00007FF701D476C3]
+	(No symbol) [0x00007FF701D10490]
+	(No symbol) [0x00007FF701D11743]
+	GetHandleVerifier [0x00007FF70223436D+3525677]
+	GetHandleVerifier [0x00007FF702247F3B+3606523]
+	GetHandleVerifier [0x00007FF70223CEE3+3561379]
+	GetHandleVerifier [0x00007FF701FA7C0A+853194]
+	(No symbol) [0x00007FF701E4990F]
+	(No symbol) [0x00007FF701E45674]
+	(No symbol) [0x00007FF701E45816]
+	(No symbol) [0x00007FF701E34D89]
+	BaseThreadInitThunk [0x00007FFD14677374+20]
+	RtlUserThreadStart [0x00007FFD15D1CC91+33]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-03-08T18:42:45.287807" elapsed="0.000033"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-03-08T18:42:45.287975" elapsed="0.000022"/>
+</kw>
+<status status="FAIL" start="2025-03-08T18:42:38.499468" elapsed="6.788705">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x00007FF701EDDF85+26693]
+	(No symbol) [0x00007FF701E3EAD0]
+	(No symbol) [0x00007FF701CC91CA]
+	(No symbol) [0x00007FF701CD0B2C]
+	(No symbol) [0x00007FF701CD3C8C]
+	(No symbol) [0x00007FF701D713F2]
+	(No symbol) [0x00007FF701D478EA]
+	(No symbol) [0x00007FF701D700B8]
+	(No symbol) [0x00007FF701D476C3]
+	(No symbol) [0x00007FF701D10490]
+	(No symbol) [0x00007FF701D11743]
+	GetHandleVerifier [0x00007FF70223436D+3525677]
+	GetHandleVerifier [0x00007FF702247F3B+3606523]
+	GetHandleVerifier [0x00007FF70223CEE3+3561379]
+	GetHandleVerifier [0x00007FF701FA7C0A+853194]
+	(No symbol) [0x00007FF701E4990F]
+	(No symbol) [0x00007FF701E45674]
+	(No symbol) [0x00007FF701E45816]
+	(No symbol) [0x00007FF701E34D89]
+	BaseThreadInitThunk [0x00007FFD14677374+20]
+	RtlUserThreadStart [0x00007FFD15D1CC91+33]
+</status>
+</test>
+<status status="FAIL" start="2025-03-08T18:42:38.311149" elapsed="6.979167"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Update Staff Group" id="s1" pass="0" fail="1" skip="0">Update Staff Group</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
