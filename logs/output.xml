@@ -1,215 +1,441 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-08T18:42:38.310234" rpa="false" schemaversion="5">
-<suite id="s1" name="Update Staff Group" source="C:\Users\KASIDIT\Documents\GitHub\auto_edit_staff_catty\update_staff_group.robot">
-<test id="s1-t1" name="Edit Record Test" line="11">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on darwin)" generated="2025-03-13T19:09:29.810238" rpa="false" schemaversion="5">
+<suite id="s1" name="Update Staff Group" source="/Users/owaygroupit/Documents/oppo/lab/auto_edit_staff_catty/update_staff_group.robot">
+<test id="s1-t1" name="🎯 ทดสอบแก้ไขข้อมูลพนักงาน (Edit Record Test)" line="16">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-08T18:42:38.500366" level="INFO">Opening browser 'chrome' to base url 'https://sellout-oppomex-training.possefy.co.th/staff/lists-v2?keyword=R118099&amp;status=1&amp;group_catty=&amp;department_id='.</msg>
+<msg time="2025-03-13T19:09:29.903080" level="INFO">Opening browser 'chrome' to base url 'https://col_hr_web.test/staff/lists?keyword=OPP2819&amp;department_id=&amp;all_dept_id=&amp;position_id=&amp;flag=1&amp;agent_id=&amp;nationality_id=&amp;staff_type=&amp;show-lock=&amp;from=&amp;to=&amp;date_type=&amp;edit_type='.</msg>
+<msg time="2025-03-13T19:09:29.904738" level="DEBUG">Selenium Manager binary found at: /opt/homebrew/lib/python3.13/site-packages/selenium/webdriver/common/macos/selenium-manager</msg>
+<msg time="2025-03-13T19:09:29.904794" level="DEBUG">Executing process: /opt/homebrew/lib/python3.13/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --debug --language-binding python --output json</msg>
+<msg time="2025-03-13T19:09:29.970742" level="DEBUG">chromedriver not found in PATH</msg>
+<msg time="2025-03-13T19:09:29.970886" level="DEBUG">chrome detected at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome</msg>
+<msg time="2025-03-13T19:09:29.970908" level="DEBUG">Running command: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version</msg>
+<msg time="2025-03-13T19:09:29.970926" level="DEBUG">Output: "Google Chrome 134.0.6998.89 "</msg>
+<msg time="2025-03-13T19:09:29.970940" level="DEBUG">Detected browser: chrome 134.0.6998.89</msg>
+<msg time="2025-03-13T19:09:29.970955" level="DEBUG">Required driver: chromedriver 134.0.6998.88</msg>
+<msg time="2025-03-13T19:09:29.970967" level="DEBUG">chromedriver 134.0.6998.88 already in the cache</msg>
+<msg time="2025-03-13T19:09:29.970980" level="DEBUG">Driver path: /Users/owaygroupit/.cache/selenium/chromedriver/mac-arm64/134.0.6998.88/chromedriver</msg>
+<msg time="2025-03-13T19:09:29.970994" level="DEBUG">Browser path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome</msg>
+<msg time="2025-03-13T19:09:29.972999" level="DEBUG">Started executable: `/Users/owaygroupit/.cache/selenium/chromedriver/mac-arm64/134.0.6998.88/chromedriver` in a child process with pid: 65986 using 0 to output -3</msg>
+<msg time="2025-03-13T19:09:30.170397" level="DEBUG">POST http://localhost:61360/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': &lt;PageLoadStrategy.normal: 'normal'&gt;, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', 'args': []}}}}</msg>
+<msg time="2025-03-13T19:09:30.170998" level="DEBUG">Starting new HTTP connection (1): localhost:61360</msg>
+<msg time="2025-03-13T19:09:30.916985" level="DEBUG">http://localhost:61360 "POST /session HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:30.917074" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"134.0.6998.89","chrome":{"chromedriverVersion":"134.0.6998.88 (7e3d5c978c6d3a6eda25692cfac7f893a2b20dd0-refs/branch-heads/6998@{#1898})","userDataDir":"/var/folders/2p/9rkrx60j2bg7832tlnnl90v00000gn/T/.org.chromium.Chromium.7uk3rN"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:61386"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"e4507a988b93453d064c2ce6ef9608e1"}} | headers=HTTPHeaderDict({'Content-Length': '890', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:30.917135" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:30.917233" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/timeouts {'script': 5000}</msg>
+<msg time="2025-03-13T19:09:30.917865" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:30.917928" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:30.917962" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:30.918007" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/timeouts {'implicit': 0}</msg>
+<msg time="2025-03-13T19:09:30.918437" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:30.918475" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:30.918503" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:30.918540" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/timeouts {'pageLoad': 300000}</msg>
+<msg time="2025-03-13T19:09:30.918895" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:30.918934" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:30.918960" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:30.919020" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/url {'url': 'https://col_hr_web.test/staff/lists?keyword=OPP2819&amp;department_id=&amp;all_dept_id=&amp;position_id=&amp;flag=1&amp;...'}</msg>
+<msg time="2025-03-13T19:09:31.210884" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/url HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.211080" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.211182" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:31.211455" level="DEBUG">Opened browser with session id e4507a988b93453d064c2ce6ef9608e1.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-08T18:42:38.500178" elapsed="1.959890"/>
+<status status="PASS" start="2025-03-13T19:09:29.902952" elapsed="1.308706"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:31.212908" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/window/maximize {}</msg>
+<msg time="2025-03-13T19:09:31.593646" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/window/maximize HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.593740" level="DEBUG">Remote response: status=200 | data={"value":{"height":1025,"width":1680,"x":0,"y":25}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.593787" level="DEBUG">Finished Request</msg>
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-08T18:42:40.460389" elapsed="0.024130"/>
+<status status="PASS" start="2025-03-13T19:09:31.212526" elapsed="0.381317"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>css:.login.username-field</arg>
+<msg time="2025-03-13T19:09:31.594877" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.material-icons.prefix.pt-2'}</msg>
+<msg time="2025-03-13T19:09:31.605460" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.605548" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.13"},{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.17"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.605589" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:31.606534" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.13'}]}</msg>
+<msg time="2025-03-13T19:09:31.611514" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/execute/sync HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.611603" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.611644" level="DEBUG">Finished Request</msg>
+<arg>css:.material-icons.prefix.pt-2</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-08T18:42:40.485008" elapsed="0.012038"/>
+<status status="PASS" start="2025-03-13T19:09:31.594308" elapsed="0.017386"/>
 </kw>
-<msg time="2025-03-08T18:42:40.497183" level="INFO">${is_login} = True</msg>
+<msg time="2025-03-13T19:09:31.611819" level="INFO">${is_login} = True</msg>
 <var>${is_login}</var>
 <arg>Wait Until Element Is Visible</arg>
-<arg>css:.login.username-field</arg>
+<arg>css:.material-icons.prefix.pt-2</arg>
 <arg>5s</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-03-08T18:42:40.484802" elapsed="0.012416"/>
+<status status="PASS" start="2025-03-13T19:09:31.594122" elapsed="0.017712"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Login To Application">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-08T18:42:41.498205" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-08T18:42:40.498017" elapsed="1.000308"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:31.612918" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': 'input#username'}</msg>
+<msg time="2025-03-13T19:09:31.618613" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.618698" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.4"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.618737" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:31.618845" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.4'}]}</msg>
+<msg time="2025-03-13T19:09:31.623364" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/execute/sync HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.623425" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.623456" level="DEBUG">Finished Request</msg>
+<arg>css:input#username</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-13T19:09:31.612709" elapsed="0.010784"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-08T18:42:41.498719" level="INFO">Typing text 'admin' into text field 'css:input.login.username-field'.</msg>
-<arg>css:input.login.username-field</arg>
+<msg time="2025-03-13T19:09:31.623719" level="INFO">Typing text '99901' into text field 'css:input#username'.</msg>
+<msg time="2025-03-13T19:09:31.623771" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': 'input#username'}</msg>
+<msg time="2025-03-13T19:09:31.626783" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.626828" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.4"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.626857" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:31.626899" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.4/clear {}</msg>
+<msg time="2025-03-13T19:09:31.643608" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.4/clear HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.643679" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.643712" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:31.643776" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.4/value {'text': '99901', 'value': ['9', '9', '9', '0', '1']}</msg>
+<msg time="2025-03-13T19:09:31.736021" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.4/value HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.736100" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.736138" level="DEBUG">Finished Request</msg>
+<arg>css:input#username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-08T18:42:41.498487" elapsed="0.038460"/>
+<status status="PASS" start="2025-03-13T19:09:31.623587" elapsed="0.112593"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-08T18:42:41.537352" level="INFO">Typing text 'AdminMXITTraining@!@2025' into text field 'css:input.login.password-field'.</msg>
-<arg>css:input.login.password-field</arg>
+<msg time="2025-03-13T19:09:31.736424" level="INFO">Typing text 'bambam' into text field 'css:input#password'.</msg>
+<msg time="2025-03-13T19:09:31.736487" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': 'input#password'}</msg>
+<msg time="2025-03-13T19:09:31.742213" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.742284" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.5"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.742317" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:31.742366" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.5/clear {}</msg>
+<msg time="2025-03-13T19:09:31.753203" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.5/clear HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.753275" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.753308" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:31.753364" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.5/value {'text': 'bambam', 'value': ['b', 'a', 'm', 'b', 'a', 'm']}</msg>
+<msg time="2025-03-13T19:09:31.780833" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.5/value HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.780908" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.780940" level="DEBUG">Finished Request</msg>
+<arg>css:input#password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-08T18:42:41.537108" elapsed="0.051497"/>
+<status status="PASS" start="2025-03-13T19:09:31.736289" elapsed="0.044688"/>
 </kw>
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2025-03-08T18:42:41.589025" level="INFO">Sending key(s) ('ENTER',) to css:input.login.password-field element.</msg>
-<msg time="2025-03-08T18:42:41.861763" level="INFO">Pressing special key ENTER to element.</msg>
-<msg time="2025-03-08T18:42:41.861833" level="INFO">Releasing special key ENTER.</msg>
-<arg>css:input.login.password-field</arg>
+<msg time="2025-03-13T19:09:31.781344" level="INFO">Sending key(s) ('ENTER',) to css:input#password element.</msg>
+<msg time="2025-03-13T19:09:31.781430" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': 'input#password'}</msg>
+<msg time="2025-03-13T19:09:31.784541" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:31.784592" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.5"}]} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:31.784621" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:31.784794" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/actions {'actions': [{'type': 'pointer', 'parameters': {'pointerType': 'mouse'}, 'id': 'mouse', 'actions': [{'type': 'pointerMove', 'duration': 250, 'x': 0, 'y': 0, 'origin': {'element-6066-11e4-a52e-4f735466cecf': 'f.4AC90D478DAC2DD35FF677519C4780F4.d.7FC99098C2BF7619579E1D2020FFAA3F.e.5'}}, {'type': 'pointerDown', 'duration': 0, 'button': 0}, {'type': 'pointerUp', 'duration': 0, 'button': 0}]}, {'type': 'key', 'id': 'key', 'actions': [{'type': 'pause', 'duration': 0}, {'type': 'pause', 'duration': 0}, {'type': 'pause', 'duration': 0}]}]}</msg>
+<msg time="2025-03-13T19:09:32.051666" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/actions HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:32.051886" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:32.052007" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:32.052196" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2025-03-13T19:09:32.052272" level="INFO">Releasing special key ENTER.</msg>
+<msg time="2025-03-13T19:09:32.052564" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/actions {'actions': [{'type': 'pointer', 'parameters': {'pointerType': 'mouse'}, 'id': 'mouse', 'actions': [{'type': 'pause', 'duration': 0}, {'type': 'pause', 'duration': 0}, {'type': 'pause', 'duration': 0}]}, {'type': 'key', 'id': 'key', 'actions': [{'type': 'keyDown', 'value': '\ue007'}, {'type': 'keyUp', 'value': '\ue007'}, {'type': 'keyUp', 'value': '\ue007'}]}]}</msg>
+<msg time="2025-03-13T19:09:32.065834" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/actions HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:32.065982" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:32.066054" level="DEBUG">Finished Request</msg>
+<arg>css:input#password</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2025-03-08T18:42:41.588753" elapsed="0.845182"/>
+<status status="PASS" start="2025-03-13T19:09:31.781085" elapsed="0.285057"/>
 </kw>
-<status status="PASS" start="2025-03-08T18:42:40.497755" elapsed="1.936309"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:32.066708" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square'}</msg>
+<msg time="2025-03-13T19:09:32.077057" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:32.077192" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:32.077254" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:32.281540" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square'}</msg>
+<msg time="2025-03-13T19:09:32.289977" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:32.290152" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:32.290236" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:32.495704" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square'}</msg>
+<msg time="2025-03-13T19:09:32.505483" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:32.505656" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:32.505747" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:32.711306" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square'}</msg>
+<msg time="2025-03-13T19:09:32.720791" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:32.720927" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:32.720999" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:32.926468" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square'}</msg>
+<msg time="2025-03-13T19:09:32.936173" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:32.936351" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:32.936441" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:33.139677" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square'}</msg>
+<msg time="2025-03-13T19:09:33.149363" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:33.149560" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:33.149652" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:33.355158" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square'}</msg>
+<msg time="2025-03-13T19:09:34.097164" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:34.097252" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.48A60B30DA3DC9E9FBE22074DDE91C17.e.40"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:34.097288" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:34.097396" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.4AC90D478DAC2DD35FF677519C4780F4.d.48A60B30DA3DC9E9FBE22074DDE91C17.e.40'}]}</msg>
+<msg time="2025-03-13T19:09:34.100298" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/execute/sync HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:34.100349" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:34.100379" level="DEBUG">Finished Request</msg>
+<arg>css:.sidenav-main.nav-expanded.nav-lock.nav-collapsible.sidenav-light.sidenav-active-square</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-13T19:09:32.066342" elapsed="2.034071"/>
+</kw>
+<status status="PASS" start="2025-03-13T19:09:31.612510" elapsed="2.487968"/>
 </kw>
 <arg>${is_login}</arg>
 <arg>Login To Application</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-08T18:42:40.497469" elapsed="1.936646"/>
+<status status="PASS" start="2025-03-13T19:09:31.612209" elapsed="2.488296"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-03-08T18:42:42.434530" level="INFO">Opening url 'https://sellout-oppomex-training.possefy.co.th/staff/lists-v2?keyword=R118099&amp;status=1&amp;group_catty=&amp;department_id='</msg>
+<msg time="2025-03-13T19:09:34.100703" level="INFO">Opening url 'https://col_hr_web.test/staff/lists?keyword=OPP2819&amp;department_id=&amp;all_dept_id=&amp;position_id=&amp;flag=1&amp;agent_id=&amp;nationality_id=&amp;staff_type=&amp;show-lock=&amp;from=&amp;to=&amp;date_type=&amp;edit_type='</msg>
+<msg time="2025-03-13T19:09:34.100749" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/url {'url': 'https://col_hr_web.test/staff/lists?keyword=OPP2819&amp;department_id=&amp;all_dept_id=&amp;position_id=&amp;flag=1&amp;...'}</msg>
+<msg time="2025-03-13T19:09:35.190898" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/url HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:35.190973" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:35.191005" level="DEBUG">Finished Request</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-03-08T18:42:42.434369" elapsed="0.362009"/>
+<status status="PASS" start="2025-03-13T19:09:34.100609" elapsed="1.090431"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]</arg>
-<arg>20s</arg>
+<msg time="2025-03-13T19:09:35.191343" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.tooltipped'}</msg>
+<msg time="2025-03-13T19:09:35.200103" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:35.200412" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.43636C28A3C1EC2F3C4797091671FF87.e.136"},{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.43636C28A3C1EC2F3C4797091671FF87.e.137"},{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.43636C28A3C1EC2F3C4797091671FF87.e.138"}]} | headers=HTTPHeaderDict({'Content-Length': '365', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:35.200624" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:35.200966" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.4AC90D478DAC2DD35FF677519C4780F4.d.43636C28A3C1EC2F3C4797091671FF87.e.136'}]}</msg>
+<msg time="2025-03-13T19:09:35.211480" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/execute/sync HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:35.211560" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:35.211593" level="DEBUG">Finished Request</msg>
+<arg>css:.tooltipped</arg>
+<arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-08T18:42:42.796635" elapsed="0.013381"/>
+<status status="PASS" start="2025-03-13T19:09:35.191162" elapsed="0.020476"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:35.211945" level="INFO">Clicking element 'css:.tooltipped'.</msg>
+<msg time="2025-03-13T19:09:35.212137" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.tooltipped'}</msg>
+<msg time="2025-03-13T19:09:35.216685" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:35.216748" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.43636C28A3C1EC2F3C4797091671FF87.e.136"},{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.43636C28A3C1EC2F3C4797091671FF87.e.137"},{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.43636C28A3C1EC2F3C4797091671FF87.e.138"}]} | headers=HTTPHeaderDict({'Content-Length': '365', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:35.216780" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:35.216827" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.43636C28A3C1EC2F3C4797091671FF87.e.136/click {}</msg>
+<msg time="2025-03-13T19:09:36.370913" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.43636C28A3C1EC2F3C4797091671FF87.e.136/click HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:36.370993" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:36.371029" level="DEBUG">Finished Request</msg>
+<arg>css:.tooltipped</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T19:09:35.211808" elapsed="1.159261"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:36.371407" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.select-dropdown'}</msg>
+<msg time="2025-03-13T19:09:36.385812" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:36.385887" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.150"},{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.196"}]} | headers=HTTPHeaderDict({'Content-Length': '247', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:36.385924" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:36.386020" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.150'}]}</msg>
+<msg time="2025-03-13T19:09:36.391432" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/execute/sync HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:36.391495" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:36.391525" level="DEBUG">Finished Request</msg>
+<arg>css:.select-dropdown</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-13T19:09:36.371207" elapsed="0.020354"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:36.391785" level="INFO">Clicking element 'css:.select-dropdown'.</msg>
+<msg time="2025-03-13T19:09:36.391837" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '.select-dropdown'}</msg>
+<msg time="2025-03-13T19:09:36.394678" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:36.394721" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.150"},{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.196"}]} | headers=HTTPHeaderDict({'Content-Length': '247', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:36.394749" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:36.394788" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.150/click {}</msg>
+<msg time="2025-03-13T19:09:37.025795" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.150/click HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:37.025934" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:37.026000" level="DEBUG">Finished Request</msg>
+<arg>css:.select-dropdown</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T19:09:36.391684" elapsed="0.634385"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:37.026546" level="INFO">Clicking element 'xpath=//ul[contains(@class, 'dropdown-content')]//li[span[text()='- Staff information -']]'.</msg>
+<msg time="2025-03-13T19:09:37.026665" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'xpath', 'value': "//ul[contains(@class, 'dropdown-content')]//li[span[text()='- Staff information -']]"}</msg>
+<msg time="2025-03-13T19:09:37.037181" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:37.037342" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.200"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:37.037561" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:37.037896" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.200/click {}</msg>
+<msg time="2025-03-13T19:09:37.070861" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.200/click HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:37.070948" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:37.070986" level="DEBUG">Finished Request</msg>
+<arg>xpath=//ul[contains(@class, 'dropdown-content')]//li[span[text()='- Staff information -']]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T19:09:37.026326" elapsed="0.044704"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:37.071340" level="INFO">Clicking element 'xpath=//i[contains(text(), 'arrow_forward')]/parent::*'.</msg>
+<msg time="2025-03-13T19:09:37.071409" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'xpath', 'value': "//i[contains(text(), 'arrow_forward')]/parent::*"}</msg>
+<msg time="2025-03-13T19:09:37.077145" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:37.077213" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.193"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:37.077249" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:37.077311" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.193/click {}</msg>
+<msg time="2025-03-13T19:09:39.231133" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.28CCBF1C5937735922740F7DB338E890.e.193/click HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:39.231265" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:39.231301" level="DEBUG">Finished Request</msg>
+<arg>xpath=//i[contains(text(), 'arrow_forward')]/parent::*</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T19:09:37.071187" elapsed="2.160159"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:39.231872" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'xpath', 'value': "//i[contains(text(), 'arrow_forward')]"}</msg>
+<msg time="2025-03-13T19:09:39.238984" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:39.239057" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.307"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:39.239091" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:39.239190" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.307'}]}</msg>
+<msg time="2025-03-13T19:09:39.242724" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/execute/sync HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:39.242791" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:39.242821" level="DEBUG">Finished Request</msg>
+<arg>xpath=//i[contains(text(), 'arrow_forward')]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-13T19:09:39.231582" elapsed="0.011274"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>xpath=//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]</arg>
+<msg time="2025-03-13T19:09:39.243132" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'xpath', 'value': "//i[contains(text(), 'arrow_forward')]"}</msg>
+<msg time="2025-03-13T19:09:39.247967" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:39.248475" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.307"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:39.248662" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:39.248834" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/actions {'actions': [{'type': 'pointer', 'parameters': {'pointerType': 'mouse'}, 'id': 'mouse', 'actions': [{'type': 'pointerMove', 'duration': 250, 'x': 0, 'y': 0, 'origin': {'element-6066-11e4-a52e-4f735466cecf': 'f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.307'}}]}, {'type': 'key', 'id': 'key', 'actions': [{'type': 'pause', 'duration': 0}]}]}</msg>
+<msg time="2025-03-13T19:09:39.514663" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/actions HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:39.514867" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:39.514961" level="DEBUG">Finished Request</msg>
+<arg>xpath=//i[contains(text(), 'arrow_forward')]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-03-08T18:42:42.810375" elapsed="0.273949"/>
+<status status="PASS" start="2025-03-13T19:09:39.242986" elapsed="0.272086"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-08T18:42:44.084849" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-08T18:42:43.084634" elapsed="1.000324"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-03-08T18:42:44.085609" level="INFO">Clicking element 'xpath=//tr[td[contains(text(),"R118099")]]//a[@title="Edit"]'.</msg>
-<arg>xpath=//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-08T18:42:44.085407" elapsed="0.082998"/>
-</kw>
-<arg>Click Element</arg>
-<arg>xpath=//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-03-08T18:42:44.085242" elapsed="0.083241"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-08T18:42:45.169541" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-08T18:42:44.168849" elapsed="1.000807"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-03-08T18:42:45.170445" level="INFO">Executing JavaScript:
-document.evaluate('//tr[td[contains(text(),"R118099")]]//a[@title="Edit"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();
-Without any arguments.</msg>
-<msg time="2025-03-08T18:42:45.285436" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-03-08T18:42:45.285605" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
-  (Session info: chrome=134.0.6998.36)
-Stacktrace:
-	GetHandleVerifier [0x00007FF701EDDF85+26693]
-	(No symbol) [0x00007FF701E3EAD0]
-	(No symbol) [0x00007FF701CC91CA]
-	(No symbol) [0x00007FF701CD0B2C]
-	(No symbol) [0x00007FF701CD3C8C]
-	(No symbol) [0x00007FF701D713F2]
-	(No symbol) [0x00007FF701D478EA]
-	(No symbol) [0x00007FF701D700B8]
-	(No symbol) [0x00007FF701D476C3]
-	(No symbol) [0x00007FF701D10490]
-	(No symbol) [0x00007FF701D11743]
-	GetHandleVerifier [0x00007FF70223436D+3525677]
-	GetHandleVerifier [0x00007FF702247F3B+3606523]
-	GetHandleVerifier [0x00007FF70223CEE3+3561379]
-	GetHandleVerifier [0x00007FF701FA7C0A+853194]
-	(No symbol) [0x00007FF701E4990F]
-	(No symbol) [0x00007FF701E45674]
-	(No symbol) [0x00007FF701E45816]
-	(No symbol) [0x00007FF701E34D89]
-	BaseThreadInitThunk [0x00007FFD14677374+20]
-	RtlUserThreadStart [0x00007FFD15D1CC91+33]
-</msg>
-<arg>document.evaluate('//tr[td[contains(text(),"${KEYWORD}")]]//a[@title="Edit"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="FAIL" start="2025-03-08T18:42:45.169990" elapsed="0.117478">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
-  (Session info: chrome=134.0.6998.36)
-Stacktrace:
-	GetHandleVerifier [0x00007FF701EDDF85+26693]
-	(No symbol) [0x00007FF701E3EAD0]
-	(No symbol) [0x00007FF701CC91CA]
-	(No symbol) [0x00007FF701CD0B2C]
-	(No symbol) [0x00007FF701CD3C8C]
-	(No symbol) [0x00007FF701D713F2]
-	(No symbol) [0x00007FF701D478EA]
-	(No symbol) [0x00007FF701D700B8]
-	(No symbol) [0x00007FF701D476C3]
-	(No symbol) [0x00007FF701D10490]
-	(No symbol) [0x00007FF701D11743]
-	GetHandleVerifier [0x00007FF70223436D+3525677]
-	GetHandleVerifier [0x00007FF702247F3B+3606523]
-	GetHandleVerifier [0x00007FF70223CEE3+3561379]
-	GetHandleVerifier [0x00007FF701FA7C0A+853194]
-	(No symbol) [0x00007FF701E4990F]
-	(No symbol) [0x00007FF701E45674]
-	(No symbol) [0x00007FF701E45816]
-	(No symbol) [0x00007FF701E34D89]
-	BaseThreadInitThunk [0x00007FFD14677374+20]
-	RtlUserThreadStart [0x00007FFD15D1CC91+33]
-</status>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T19:09:41.516041" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-03-08T18:42:45.287807" elapsed="0.000033"/>
+<status status="PASS" start="2025-03-13T19:09:39.515338" elapsed="2.000799"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:41.516718" level="INFO">Executing JavaScript:
+document.evaluate("//div[text()='BOG-1A']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();
+Without any arguments.</msg>
+<msg time="2025-03-13T19:09:41.516821" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/execute/sync {'script': 'document.evaluate("//div[text()=\'BOG-1A\']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, nul...', 'args': []}</msg>
+<msg time="2025-03-13T19:09:41.522478" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/execute/sync HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:41.522608" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:41.522674" level="DEBUG">Finished Request</msg>
+<arg>document.evaluate("//div[text()='${AREA}']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-03-13T19:09:41.516322" elapsed="0.006410"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T19:09:42.523574" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T19:09:41.523009" elapsed="1.000862"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:42.524970" level="INFO">Clicking element 'css:#select2-position_id-container'.</msg>
+<msg time="2025-03-13T19:09:42.525312" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '#select2-position_id-container'}</msg>
+<msg time="2025-03-13T19:09:42.539376" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:42.539523" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.310"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:42.539599" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:42.539698" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.310/click {}</msg>
+<msg time="2025-03-13T19:09:42.592332" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.310/click HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:42.592424" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:42.592467" level="DEBUG">Finished Request</msg>
+<arg>css:#select2-position_id-container</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T19:09:42.524506" elapsed="0.068064"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:42.593416" level="INFO">Clicking element 'xpath=//li[contains(@class, 'select2-results__option') and text()='HUNTER']'.</msg>
+<msg time="2025-03-13T19:09:42.593532" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'xpath', 'value': "//li[contains(@class, 'select2-results__option') and text()='HUNTER']"}</msg>
+<msg time="2025-03-13T19:09:42.607887" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:42.607969" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.312"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:42.608005" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:42.608056" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.312/click {}</msg>
+<msg time="2025-03-13T19:09:42.634202" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.312/click HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:42.634278" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:42.634309" level="DEBUG">Finished Request</msg>
+<arg>xpath=//li[contains(@class, 'select2-results__option') and text()='${POSITION}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T19:09:42.593013" elapsed="0.041330"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:42.634571" level="INFO">Clicking element 'xpath=//i[contains(text(), 'arrow_forward')]/parent::*'.</msg>
+<msg time="2025-03-13T19:09:42.634629" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'xpath', 'value': "//i[contains(text(), 'arrow_forward')]/parent::*"}</msg>
+<msg time="2025-03-13T19:09:42.647528" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:42.647612" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.314"}]} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:42.647645" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:42.647693" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.314/click {}</msg>
+<msg time="2025-03-13T19:09:42.688253" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/element/f.4AC90D478DAC2DD35FF677519C4780F4.d.FEB2BA0C25D241F77639F4377EC43DAA.e.314/click HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:42.688327" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:42.688360" level="DEBUG">Finished Request</msg>
+<arg>xpath=//i[contains(text(), 'arrow_forward')]/parent::*</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T19:09:42.634465" elapsed="0.053932"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T19:09:45.689986" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T19:09:42.688521" elapsed="3.001826"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:45.691674" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '#salary'}</msg>
+<msg time="2025-03-13T19:09:45.706034" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:45.706219" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:45.706313" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:45.912095" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '#salary'}</msg>
+<msg time="2025-03-13T19:09:45.922404" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:45.922599" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:45.922693" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:46.128005" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/elements {'using': 'css selector', 'value': '#salary'}</msg>
+<msg time="2025-03-13T19:09:47.419003" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/elements HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:47.419080" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.81E8E5815B77FE555EFE6F39359BD97B.e.328"},{"element-6066-11e4-a52e-4f735466cecf":"f.4AC90D478DAC2DD35FF677519C4780F4.d.81E8E5815B77FE555EFE6F39359BD97B.e.400"}]} | headers=HTTPHeaderDict({'Content-Length': '247', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:47.419116" level="DEBUG">Finished Request</msg>
+<msg time="2025-03-13T19:09:47.419212" level="DEBUG">POST http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.4AC90D478DAC2DD35FF677519C4780F4.d.81E8E5815B77FE555EFE6F39359BD97B.e.328'}]}</msg>
+<msg time="2025-03-13T19:09:47.422102" level="DEBUG">http://localhost:61360 "POST /session/e4507a988b93453d064c2ce6ef9608e1/execute/sync HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:47.422156" level="DEBUG">Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:47.422186" level="DEBUG">Finished Request</msg>
+<arg>css:#salary</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-13T19:09:45.690878" elapsed="1.731345"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T19:09:49.422729" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T19:09:47.422396" elapsed="2.000739"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
+<msg time="2025-03-13T19:09:49.423995" level="DEBUG">Closing browser with session id e4507a988b93453d064c2ce6ef9608e1.</msg>
+<msg time="2025-03-13T19:09:49.424198" level="DEBUG">DELETE http://localhost:61360/session/e4507a988b93453d064c2ce6ef9608e1 {}</msg>
+<msg time="2025-03-13T19:09:49.480937" level="DEBUG">http://localhost:61360 "DELETE /session/e4507a988b93453d064c2ce6ef9608e1 HTTP/1.1" 200 0</msg>
+<msg time="2025-03-13T19:09:49.481361" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2025-03-13T19:09:49.481525" level="DEBUG">Finished Request</msg>
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-03-08T18:42:45.287975" elapsed="0.000022"/>
+<status status="PASS" start="2025-03-13T19:09:49.423729" elapsed="0.096770"/>
 </kw>
-<status status="FAIL" start="2025-03-08T18:42:38.499468" elapsed="6.788705">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
-  (Session info: chrome=134.0.6998.36)
-Stacktrace:
-	GetHandleVerifier [0x00007FF701EDDF85+26693]
-	(No symbol) [0x00007FF701E3EAD0]
-	(No symbol) [0x00007FF701CC91CA]
-	(No symbol) [0x00007FF701CD0B2C]
-	(No symbol) [0x00007FF701CD3C8C]
-	(No symbol) [0x00007FF701D713F2]
-	(No symbol) [0x00007FF701D478EA]
-	(No symbol) [0x00007FF701D700B8]
-	(No symbol) [0x00007FF701D476C3]
-	(No symbol) [0x00007FF701D10490]
-	(No symbol) [0x00007FF701D11743]
-	GetHandleVerifier [0x00007FF70223436D+3525677]
-	GetHandleVerifier [0x00007FF702247F3B+3606523]
-	GetHandleVerifier [0x00007FF70223CEE3+3561379]
-	GetHandleVerifier [0x00007FF701FA7C0A+853194]
-	(No symbol) [0x00007FF701E4990F]
-	(No symbol) [0x00007FF701E45674]
-	(No symbol) [0x00007FF701E45816]
-	(No symbol) [0x00007FF701E34D89]
-	BaseThreadInitThunk [0x00007FFD14677374+20]
-	RtlUserThreadStart [0x00007FFD15D1CC91+33]
-</status>
+<status status="PASS" start="2025-03-13T19:09:29.901843" elapsed="19.618809"/>
 </test>
-<status status="FAIL" start="2025-03-08T18:42:38.311149" elapsed="6.979167"/>
+<status status="PASS" start="2025-03-13T19:09:29.810793" elapsed="19.710120"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Update Staff Group" id="s1" pass="0" fail="1" skip="0">Update Staff Group</stat>
+<stat name="Update Staff Group" id="s1" pass="1" fail="0" skip="0">Update Staff Group</stat>
 </suite>
 </statistics>
 <errors>
